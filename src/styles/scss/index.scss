@@ -1,0 +1,41 @@
+@import './helpers/variables.scss';
+
+body {
+  header {
+    background-color: $blue-900;
+    margin-bottom: 20px;
+    h1 {
+      color: $blue-100;
+      padding: 10px;
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+  main {
+    .main-body {
+      background-color: $blue-100;
+      min-height: 300px;
+      margin: 10px;
+      h2 {
+        margin: 10px 10px;
+        color: $blue-800;
+      }
+      .form-food {
+        padding: 20px 0px;
+        height: 100%;
+        .form-select {
+        }
+        .mb-3 {
+          margin: 10px;
+        }
+        .form-control {
+          width: 20%;
+        }
+        .button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

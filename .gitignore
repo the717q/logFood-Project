@@ -1,0 +1,5 @@
+.parcel-cache
+dist
+nod_modules
+fakeFetch/node_modules
+parcel-bundle-reports

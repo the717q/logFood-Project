@@ -1,0 +1,25 @@
+{
+  "name": "foodproject",
+  "version": "1.0.0",
+  "description": "foodProject",
+  "source": "src/index.html",
+  "author": "Andre Silveira",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "chart.js": "^3.9.1",
+    "js-snackbar": "^1.1.2",
+    "sass": "^1.54.4"
+  },
+  "devDependencies": {
+    "@parcel/reporter-bundle-analyzer": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "scss": "sass --watch ./src/styles/scss/index.scss ./src/styles/css/index.css",
+    "deploy": "gh-pages -b master -d dist",
+    "report": "parcel build src/index.html --reporter @parcel/reporter-bundle-analyzer"
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+body header {
+  background-color: #031633;
+  margin-bottom: 20px;
+}
+body header h1 {
+  color: #cfe2ff;
+  padding: 10px;
+}
+body header h1:hover {
+  cursor: default;
+}
+body main .main-body {
+  background-color: #cfe2ff;
+  min-height: 300px;
+  margin: 10px;
+}
+body main .main-body h2 {
+  margin: 10px 10px;
+  color: #052c65;
+}
+body main .main-body .form-food {
+  padding: 20px 0px;
+  height: 100%;
+}
+body main .main-body .form-food .mb-3 {
+  margin: 10px;
+}
+body main .main-body .form-food .form-control {
+  width: 20%;
+}
+body main .main-body .form-food .button {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Title -->
+      <title>Web Food Project</title>
+
+      <!-- Javascript -->
+
+      <script src="./javascript/index.js" type="module" defer></script>
+
+      <!-- styles folder -->
+
+      <link href="./styles/css/index.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12">
+                  <h1 class="display-2">My Nutrition</h1>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="container-md">
+            <div class="row">
+               <div class="col-6 main-body">
+                  <h2>Add Food</h2>
+                  <form class="form-food" id="food-form">
+                     <div class="select" id="select-id">
+                        <select
+                           class="form-select"
+                           id="value-selected"
+                           required
+                        >
+                           <option selected>Please select</option>
+                           <option value="pizza">Pizza</option>
+                           <option value="pasta">Pasta</option>
+                           <option value="burger">Burger</option>
+                           <option value="soup">Soup</option>
+                           <option value="salad">Salad</option>
+                           <option value="apple">Apple</option>
+                           <option value="peach">Peach</option>
+                           <option value="cider">Cider</option>
+                        </select>
+                        <div class="mb-3">
+                           <label for="create-carbs" class="form-label"
+                              >Carbs</label
+                           >
+                           <input
+                              type="number"
+                              class="form-control"
+                              id="create-carbs"
+                              placeholder="0g"
+                              min="0"
+                              max="200"
+                              required
+                           />
+                        </div>
+                        <div class="mb-3">
+                           <label for="create-protein" class="form-label"
+                              >Protein</label
+                           >
+                           <input
+                              type="number"
+                              class="form-control"
+                              id="create-protein"
+                              placeholder="0g"
+                              min="0"
+                              max="200"
+                              required
+                           />
+                        </div>
+                        <div class="mb-3">
+                           <label for="create-fat" class="form-label"
+                              >Fat</label
+                           >
+                           <input
+                              type="number"
+                              class="form-control"
+                              id="create-fat"
+                              placeholder="0g"
+                              min="0"
+                              max="200"
+                              required
+                           />
+                        </div>
+                     </div>
+                     <div class="submit">
+                        <input
+                           type="submit"
+                           class="btn btn-primary create-submit"
+                           value="Add"
+                        />
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="container-sm">
+            <div class="row" id="row"></div>
+            <div class="row" id="row1"></div>
+         </div>
+      </footer>
+   </body>
+</html>

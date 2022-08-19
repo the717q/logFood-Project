@@ -1,0 +1,61 @@
+{
+  "documents": [
+    {
+      "id": 1,
+      "fields": {
+        "name": {
+          "stringValue": "burger"
+        },
+        "fat": {
+          "integerValue": "43"
+        },
+        "protein": {
+          "integerValue": "32"
+        },
+        "carbs": {
+          "integerValue": "23"
+        }
+      },
+      "createTime": "2022-02-08T05:49:45.450271Z",
+      "updateTime": "2022-02-08T05:49:45.450271Z"
+    },
+    {
+      "id": 2,
+      "fields": {
+        "carbs": {
+          "integerValue": "3"
+        },
+        "protein": {
+          "integerValue": "3"
+        },
+        "name": {
+          "stringValue": "pizza"
+        },
+        "fat": {
+          "integerValue": "4"
+        }
+      },
+      "createTime": "2022-07-17T19:30:50.470176Z",
+      "updateTime": "2022-07-17T19:30:50.470176Z"
+    },
+    {
+      "id": 3,
+      "fields": {
+        "fat": {
+          "integerValue": "2"
+        },
+        "carbs": {
+          "integerValue": "8"
+        },
+        "protein": {
+          "integerValue": "1"
+        },
+        "name": {
+          "stringValue": "cider"
+        }
+      },
+      "createTime": "2022-07-31T06:40:26.880686Z",
+      "updateTime": "2022-07-31T06:40:26.880686Z"
+    }
+  ]
+}
