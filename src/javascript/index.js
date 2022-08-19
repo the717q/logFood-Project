@@ -45,7 +45,7 @@ form.addEventListener('submit', (event) => {
 
     // Logs the FORM SUBMITED data
 
-    .then((data) => {
+    .then(() => {
       show({ text: 'Data successfuly added' });
       row.insertAdjacentHTML(
         'beforeend',
