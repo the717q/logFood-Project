@@ -5,7 +5,6 @@ import 'js-snackbar/snackbar.css';
 import { show, ACTION_TYPE } from 'js-snackbar';
 import { getTotalCalories } from './functions';
 import { stringtoNumbers } from './functions';
-// import putData from './fetchAPI';
 
 const fetchURL = 'http://localhost:3000/documents/';
 
@@ -19,6 +18,8 @@ const getFat = document.querySelector('#create-fat');
 const row = document.querySelector('#row');
 const row1 = document.querySelector('#row1');
 
+// SUBMITS the Form
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   fetch(fetchURL, {
@@ -26,6 +27,9 @@ form.addEventListener('submit', (event) => {
     headers: {
       'Content-Type': 'application/json',
     },
+
+    // FETCHES the data into the server
+
     body: JSON.stringify({
       fields: {
         name: { stringValue: selectedValue.value },
@@ -38,6 +42,9 @@ form.addEventListener('submit', (event) => {
     .then((response) => {
       return response.json();
     })
+
+    // Logs the FORM SUBMITED data
+
     .then((data) => {
       show({ text: 'Data successfuly added' });
       row.insertAdjacentHTML(
@@ -60,6 +67,9 @@ form.addEventListener('submit', (event) => {
         </div>
     </div>`
       );
+
+      // Cleans the FORM
+
       selectedValue.value = '';
       getCarbs.value = '';
       getProtein.value = '';
@@ -75,6 +85,8 @@ fetch(fetchURL + '?pageSize=10')
   .then((data) => {
     console.log(data);
     data.forEach((item) => {
+      // Logs the SERVER DATA
+
       row.insertAdjacentHTML(
         'beforeend',
         `
@@ -98,6 +110,9 @@ fetch(fetchURL + '?pageSize=10')
     </div>`
       );
     });
+
+    // REDUCES THE SERVER DATA INTO THE TOTAL CALORIES OF ALL ITEMS
+
     const reduce = data.reduce(function (total, current) {
       return (
         total +
