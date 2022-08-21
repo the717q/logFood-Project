@@ -1,6 +1,6 @@
 # This project is using a local JSON server
 
-### **To use/update the data, run the # JSON remote server installed in the fakeFETCH folder using the # npm run start command**
+### **To use/manipulate the data, run the # JSON remote server installed in the fakeFETCH folder using the # npm run start command**
 
 ### Run npm install to install the server on your machine
 
